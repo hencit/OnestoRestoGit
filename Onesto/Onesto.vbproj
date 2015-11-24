@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC792705-9527-41C8-A6EF-5E4A97526720}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Onesto.My.MyApplication</StartupObject>
+    <RootNamespace>Onesto</RootNamespace>
+    <AssemblyName>Onesto</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>14</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Onesto.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Onesto.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0F783F588881FEA63FFAFA43550D36AEB0B99979</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Onesto_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Data\frmImportKaryawan.Designer.vb">
+      <DependentUpon>frmImportKaryawan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Data\frmImportKaryawan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Data\frmImportPenjualan.Designer.vb">
+      <DependentUpon>frmImportPenjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Data\frmImportPenjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAbout.Designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDocViewer.Designer.vb">
+      <DependentUpon>frmDocViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDocViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmDept.Designer.vb">
+      <DependentUpon>frmDept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmDept.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTest.Designer.vb">
+      <DependentUpon>frmTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmGroup.Designer.vb">
+      <DependentUpon>frmGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmOtorisasi.Designer.vb">
+      <DependentUpon>frmOtorisasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmOtorisasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmTemplateTugas.Designer.vb">
+      <DependentUpon>frmTemplateTugas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmTemplateTugas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmTugas.Designer.vb">
+      <DependentUpon>frmTugas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmTugas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Master\frmUser.Designer.vb">
+      <DependentUpon>frmUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Master\frmUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dencrypt.vb" />
+    <Compile Include="Forms\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Menu\frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Menu\frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\POS\Master\frmPOSMenu.Designer.vb">
+      <DependentUpon>frmPOSMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\POS\Master\frmPOSMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\POS\Master\frmPOSMenuCategory.Designer.vb">
+      <DependentUpon>frmPOSMenuCategory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\POS\Master\frmPOSMenuCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\POS\Master\frmPOSReceipt.Designer.vb">
+      <DependentUpon>frmPOSReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\POS\Master\frmPOSReceipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\POS\Master\frmTable.Designer.vb">
+      <DependentUpon>frmTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\POS\Master\frmTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\POS\Report-Gui\rptPOS.Designer.vb">
+      <DependentUpon>rptPOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\POS\Report-Gui\rptPOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\POS\Report\RPT_POS_Report.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_POS_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\POS\Transaction\fdlMenuCategory.Designer.vb">
+      <DependentUpon>fdlMenuCategory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\POS\Transaction\fdlMenuCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\POS\Transaction\fdlPOS.Designer.vb">
+      <DependentUpon>fdlPOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\POS\Transaction\fdlPOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\POS\Transaction\fdlSettle.Designer.vb">
+      <DependentUpon>fdlSettle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\POS\Transaction\fdlSettle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Report\rptGaji.Designer.vb">
+      <DependentUpon>rptGaji.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report\rptGaji.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Report\rptTugas.Designer.vb">
+      <DependentUpon>rptTugas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report\rptTugas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Setting\frmGantiPassword.Designer.vb">
+      <DependentUpon>frmGantiPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Setting\frmGantiPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Task\fdlApprove.Designer.vb">
+      <DependentUpon>fdlApprove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Task\fdlApprove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Task\fdlDept.Designer.vb">
+      <DependentUpon>fdlDept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Task\fdlDept.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Task\fdlGroup.Designer.vb">
+      <DependentUpon>fdlGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Task\fdlGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Task\fdlKaryawan.Designer.vb">
+      <DependentUpon>fdlKaryawan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Task\fdlKaryawan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\POS\Transaction\fdlMenu.Designer.vb">
+      <DependentUpon>fdlMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\POS\Transaction\fdlMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Task\fdlRole.Designer.vb">
+      <DependentUpon>fdlRole.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Task\fdlRole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\POS\Transaction\fdlTable.Designer.vb">
+      <DependentUpon>fdlTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\POS\Transaction\fdlTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Task\fdlTemplate.Designer.vb">
+      <DependentUpon>fdlTemplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Task\fdlTemplate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Task\fdlTugas.Designer.vb">
+      <DependentUpon>fdlTugas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Task\fdlTugas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Task\frmDelegasiTugas.Designer.vb">
+      <DependentUpon>frmDelegasiTugas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Task\frmDelegasiTugas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Task\frmDelegasiTugasList.Designer.vb">
+      <DependentUpon>frmDelegasiTugasList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Task\frmDelegasiTugasList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\POS\Transaction\frmPOS.Designer.vb">
+      <DependentUpon>frmPOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\POS\Transaction\frmPOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Public\clsLvwCompare.vb" />
+    <Compile Include="Public\clsMyListStr.vb" />
+    <Compile Include="Public\moduleProcedure.vb" />
+    <Compile Include="Public\moduleFunction.vb" />
+    <Compile Include="Reports\RPT_Gaji.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Gaji.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\POS\Report\RPT_POS_Form.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_POS_Form.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\RPT_Tugas.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT_Tugas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Data\frmImportKaryawan.resx">
+      <DependentUpon>frmImportKaryawan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Data\frmImportPenjualan.resx">
+      <DependentUpon>frmImportPenjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDocViewer.resx">
+      <DependentUpon>frmDocViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmDept.resx">
+      <DependentUpon>frmDept.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTest.resx">
+      <DependentUpon>frmTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmGroup.resx">
+      <DependentUpon>frmGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmOtorisasi.resx">
+      <DependentUpon>frmOtorisasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmTemplateTugas.resx">
+      <DependentUpon>frmTemplateTugas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmTugas.resx">
+      <DependentUpon>frmTugas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Master\frmUser.resx">
+      <DependentUpon>frmUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Menu\frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\POS\Master\frmPOSMenu.resx">
+      <DependentUpon>frmPOSMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\POS\Master\frmPOSMenuCategory.resx">
+      <DependentUpon>frmPOSMenuCategory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\POS\Master\frmPOSReceipt.resx">
+      <DependentUpon>frmPOSReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\POS\Master\frmTable.resx">
+      <DependentUpon>frmTable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\POS\Report-Gui\rptPOS.resx">
+      <DependentUpon>rptPOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\POS\Report\RPT_POS_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_POS_Report.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\POS\Transaction\fdlMenuCategory.resx">
+      <DependentUpon>fdlMenuCategory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\POS\Transaction\fdlPOS.resx">
+      <DependentUpon>fdlPOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\POS\Transaction\fdlSettle.resx">
+      <DependentUpon>fdlSettle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report\rptGaji.resx">
+      <DependentUpon>rptGaji.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report\rptTugas.resx">
+      <DependentUpon>rptTugas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Setting\frmGantiPassword.resx">
+      <DependentUpon>frmGantiPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Task\fdlApprove.resx">
+      <DependentUpon>fdlApprove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Task\fdlDept.resx">
+      <DependentUpon>fdlDept.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Task\fdlGroup.resx">
+      <DependentUpon>fdlGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Task\fdlKaryawan.resx">
+      <DependentUpon>fdlKaryawan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\POS\Transaction\fdlMenu.resx">
+      <DependentUpon>fdlMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Task\fdlRole.resx">
+      <DependentUpon>fdlRole.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\POS\Transaction\fdlTable.resx">
+      <DependentUpon>fdlTable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Task\fdlTemplate.resx">
+      <DependentUpon>fdlTemplate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Task\fdlTugas.resx">
+      <DependentUpon>fdlTugas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Task\frmDelegasiTugas.resx">
+      <DependentUpon>frmDelegasiTugas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Task\frmDelegasiTugasList.resx">
+      <DependentUpon>frmDelegasiTugasList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\POS\Transaction\frmPOS.resx">
+      <DependentUpon>frmPOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RPT_Gaji.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Gaji.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\POS\Report\RPT_POS_Form.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_POS_Form.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RPT_Tugas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT_Tugas.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Onesto_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <None Include="Pic\onesto-logo-orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
