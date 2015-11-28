@@ -193,10 +193,11 @@ Public Class fdlSettle
                 End With
 
                 ''Digunakan untuk direct print
-                '.Load(strReportPath, CrystalDecisions.Shared.OpenReportMethod.OpenReportByDefault)
-                '.SetDataSource(DS.Tables(0))
-                '.Refresh()
+                .Load(strReportPath, CrystalDecisions.Shared.OpenReportMethod.OpenReportByDefault)
+                .SetDataSource(DS.Tables(0))
+                .Refresh()
                 '.PrintToPrinter(NumberOFCopies, Collated, StartPage, EndPage)
+                .PrintToPrinter(1, True, 1, 1)
             End With
 
             With NewMDIChild

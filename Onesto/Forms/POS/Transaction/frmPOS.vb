@@ -557,6 +557,7 @@ Public Class frmPOS
             clear_lvw()
             clear_objD()
             view_record()
+            btnMenu.Enabled = True
             btnMenu.Focus()
         Catch ex As Exception
             MsgBox("Error Message : " + ex.Message)

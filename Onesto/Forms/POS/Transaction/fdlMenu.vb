@@ -49,6 +49,7 @@ Public Class fdlMenu
         cbKategori.SelectedIndex = 0
 
         clear_lvw()
+        txtFilter.Focus()
     End Sub
 
     Sub clear_lvw()
